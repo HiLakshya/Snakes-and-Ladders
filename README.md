@@ -23,6 +23,7 @@ The first player that reaches the highest space on the board, 100, wins the game
 </ul><h2>🖥️Setup</h2>
 <hr><p>Need an IDE and a C++ Compiler.</p><h5>Steps</h5><ul>
 <li>You can fork or download the repo, Once you have the file "Main.cpp", You just need to compile and run Main.cpp ( It's too easy, isn't it? ☺)</li>
+<li>Feel free to raise issues if you find some errors or want to clear your doubts...</li>
 
 <br/>  
 

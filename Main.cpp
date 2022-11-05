@@ -229,12 +229,21 @@ int SnakeTurn(int currentPosition)
     {
     case (96):
         currentPosition = 42;
+        cout << "************************\n";
+        cout << "*    SNAKE : 96>42     *\n";
+        cout << "************************\n";
         break;
     case (47):
         currentPosition = 16;
+        cout << "************************\n";
+        cout << "*    SNAKE : 47>16     *\n";
+        cout << "************************\n";
         break;
     case (26):
         currentPosition = 10;
+        cout << "************************\n";
+        cout << "*    SNAKE : 26>10     *\n";
+        cout << "************************\n";
         break;
     }
     return currentPosition;
@@ -245,13 +254,22 @@ int LadderTurn(int currentPosition)
     switch (currentPosition)
     {
     case (21):
+        cout << "************************\n";
+        cout << "*    LADDER : 21>32    *\n";
+        cout << "************************\n";
         currentPosition = 32;
         break;
     case (3):
         currentPosition = 16;
+        cout << "************************\n";
+        cout << "*    LADDER :  3>16    *\n";
+        cout << "************************\n";
         break;
     case (54):
         currentPosition = 88;
+        cout << "************************\n";
+        cout << "*    LADDER : 54>88    *\n";
+        cout << "************************\n";
         break;
     }
     return currentPosition;
@@ -429,6 +447,7 @@ MainMenuTextLabel:
                         livePositionP1 = SnakeTurn(livePositionP1);
                     }
                     BoardDisplay(livePositionP1, livePositionP2);
+                    Sleep(1000);
                     if (wincheck(livePositionP1) == 1)
                     {
                         win == 1;
@@ -460,6 +479,7 @@ MainMenuTextLabel:
                         livePositionP2 = SnakeTurn(livePositionP2);
                     }
                     BoardDisplay(livePositionP1, livePositionP2);
+                    Sleep(1000);
                     if (wincheck(livePositionP2) == 1)
                     {
                         win == 1;
@@ -501,6 +521,7 @@ MainMenuTextLabel:
                         livePositionP1 = SnakeTurn(livePositionP1);
                     }
                     BoardDisplayComputer(livePositionP1, livePositionP2);
+                    Sleep(1000);
                     if (wincheck(livePositionP1) == 1)
                     {
                         win == 1;
@@ -517,7 +538,7 @@ MainMenuTextLabel:
 
                 PlayForComputerText();
 
-                Sleep(1000);
+                
                 int diceroll2;
                 diceroll2 = DiceFunction();
                 if ((livePositionP2 + diceroll2) < 101)
@@ -532,6 +553,7 @@ MainMenuTextLabel:
                         livePositionP2 = SnakeTurn(livePositionP2);
                     }
                     BoardDisplayComputer(livePositionP1, livePositionP2);
+                    Sleep(1000);
                     if (wincheck(livePositionP2) == 1)
                     {
                         win == 1;
